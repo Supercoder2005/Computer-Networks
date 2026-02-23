@@ -1,0 +1,25 @@
+# Executables
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Build directories
+build/
+bin/
+
+# IDE files (if using Visual Studio or similar)
+*.vcxproj.user
+*.suo
+*.user
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+.vscode
