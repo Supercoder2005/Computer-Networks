@@ -4,6 +4,7 @@
 #include<time.h>
 
 #define MAX_FRAMES 100
+#define TIMEOUT 2
 
 int window_size,total_frames;
 
@@ -33,6 +34,7 @@ int main(){
             end = total_frames;
         }
         send_frames(base,end);
+        sleep(TIMEOUT);
 
         int ack = base + (rand() % ((end - base) + 1));
         if(ack>=end){
