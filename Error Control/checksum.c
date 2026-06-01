@@ -59,9 +59,16 @@ int main(){
     for(int i=0;i<n+1;i++){
         add(rsum,received[i],rsum);
     }
+    int rchecksum[SIZE] = {0};
+    printf("\nReceived data's checksum = ");
+    for(int i=0;i<SIZE;i++){
+        rchecksum[i] = 1-rsum[i];
+        printf("%d",rchecksum[i]);
+    }
+
     int error = 0;
     for(int i=0;i<SIZE;i++){
-        if(rsum[i] != 1){
+        if(rchecksum[i] != 0){
             error = 1;
             break;
         }

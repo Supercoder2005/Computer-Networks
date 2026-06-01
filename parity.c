@@ -39,10 +39,10 @@ int main(){
         rparity ^= received[i];
     }
     if(rparity == 0){
-        printf("\nNo Error Detected !");
+        printf("\nNo Error Detected !\n");
     }
     else{
-        printf("\nError Detected!!!");
+        printf("\nError Detected!!!\n");
     }
     return 0;
 }
